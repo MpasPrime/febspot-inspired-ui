@@ -24,7 +24,7 @@ Frontend prototype inspired by the Febspot platform.
 
 ## Live Demo
 
-* [https://github.com/MpasPrime/febspot-inspired-ui](https://github.com/MpasPrime/febspot-inspired-ui)
+* [https://mpasprime.github.io/febspot-inspired-ui/](https://mpasprime.github.io/febspot-inspired-ui/)
 
 ---
 
