@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- caso der problema de redimensionamento volto aqui :P -->
+<meta name="theme-color" content="#ffffff">
+
+<title>Febspot — Discover, Watch and Earn</title>
+<meta name="description" content="Descubra vídeos, encontre criadores e conheça as oportunidades para criadores na Febspot.">
+<link rel="canonical" href="https://www.febspot.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Febspot",
+  "url": "https://www.febspot.com/",
+  "inLanguage": ["pt-BR", "en", "es", "fr"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.febspot.com/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="#inicio" aria-label="Febspot">feb<span>spot</span></a>
+
+  <div class="header-actions">
+    <label for="languageSelect" style="display:none">Language</label>
+    <select class="language-select" id="languageSelect" aria-label="Idioma">
+      <option value="pt">Português</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+    </select>
+
+    <a class="button button-primary"
+       href="https://www.febspot.com/"
+       target="_blank" rel="noopener"
+       data-i18n="official">Site oficial</a>
+  </div>
+</header>
+
+<div class="layout">
+
+<aside aria-label="Navegação principal">
+  <p class="side-title" data-i18n="discover">Descobrir</p>
+  <a class="nav-link active" href="#inicio" data-i18n="home">Início</a>
+  <a class="nav-link" href="#em-alta" data-i18n="trending">Em alta</a>
+  <a class="nav-link" href="#mais-vistos" data-i18n="popular">Mais vistos</a>
+  <a class="nav-link" href="#recentes" data-i18n="recent">Recentes</a>
+  <a class="nav-link" href="#categorias" data-i18n="categories">Categorias</a>
+
+  <p class="side-title" data-i18n="creators">Criadores</p>
+  <a class="nav-link" href="#monetizacao" data-i18n="monetization">Monetização</a>
+  <a class="nav-link" href="#indicacoes" data-i18n="referrals">Indicações</a>
+</aside>
+
+<main>
+
+<section class="hero" id="inicio">
+  <span class="eyebrow" data-i18n="eyebrow">Vídeos e criadores</span>
+  <h1 data-i18n="heroTitle">Descubra vídeos. Alcance pessoas. Cresça.</h1>
+  <p data-i18n="heroDescription">
+    Explore conteúdos de diferentes categorias e conheça as oportunidades
+    disponíveis para quem publica vídeos na Febspot.
+  </p>
+
+  <div class="hero-actions">
+    <a class="button button-primary" href="#em-alta" data-i18n="explore">
+      Explorar vídeos
+    </a>
+    <a class="button button-outline"
+       href="https://www.febspot.com/"
+       target="_blank" rel="noopener"
+       data-i18n="startCreating">Começar a criar</a>
+  </div>
+</section>
+
+<section class="section" id="em-alta">
+  <div class="section-heading">
+    <h2 data-i18n="trendingTitle">Em destaque</h2>
+    <a class="section-link" href="#categorias" data-i18n="viewCategories">Ver categorias</a>
+  </div>
+  <div class="video-grid" id="trendingGrid"></div>
+</section>
+
+<section class="section" id="mais-vistos">
+  <div class="section-heading">
+    <h2 data-i18n="popularTitle">Vídeos populares</h2>
+  </div>
+  <div class="video-grid" id="popularGrid"></div>
+</section>
+
+<section class="section" id="recentes">
+  <div class="section-heading">
+    <h2 data-i18n="recentTitle">Publicações recentes</h2>
+  </div>
+  <div class="video-grid" id="recentGrid"></div>
+</section>
+
+<section class="section" id="categorias">
+  <div class="section-heading">
+    <h2 data-i18n="categoriesTitle">Explore por categoria</h2>
+  </div>
+  <div class="categories" id="categoryList">
+    <a class="category" href="#recentes" data-category="Travel" data-i18n="catTravel">Viagens</a>
+    <a class="category" href="#recentes" data-category="Animals" data-i18n="catAnimals">Animais</a>
+    <a class="category" href="#recentes" data-category="Sports" data-i18n="catSports">Esportes</a>
+    <a class="category" href="#recentes" data-category="Nature" data-i18n="catNature">Natureza</a>
+    <a class="category" href="#recentes" data-category="Education" data-i18n="catEducation">Educação</a>
+    <a class="category" href="#recentes" data-category="Lifestyle" data-i18n="catLifestyle">Estilo de vida</a>
+  </div>
+</section>
+
+<section class="section" id="monetizacao">
+  <div class="section-heading">
+    <h2 data-i18n="monetizationTitle">Monetização para criadores</h2>
+  </div>
+
+  <div class="info-grid">
+    <article class="info-card">
+      <h3 data-i18n="earnTitle">Ganhe com seus vídeos</h3>
+      <p data-i18n="earnDescription">
+        Publique conteúdo original, desenvolva sua audiência e consulte
+        as condições oficiais para monetizar visualizações elegíveis.
+      </p>
+      <a class="button button-primary"
+         href="https://www.febspot.com/"
+         target="_blank" rel="noopener"
+         data-i18n="learnMore">Saiba mais</a>
+    </article>
+
+    <article class="info-card">
+      <h3 data-i18n="partnerTitle">Programa de parceiros</h3>
+      <p data-i18n="partnerDescription">
+        Consulte as opções para criadores, os requisitos de participação
+        e as regras aplicáveis diretamente na plataforma.
+      </p>
+      <a class="button button-outline"
+         href="https://www.febspot.com/"
+         target="_blank" rel="noopener"
+         data-i18n="viewProgram">Consultar programa</a>
+    </article>
+  </div>
+
+  <div style="margin-top:20px" class="steps">
+    <article class="step">
+      <span class="step-number">01</span>
+      <h3 data-i18n="stepUpload">Publique</h3>
+      <p data-i18n="stepUploadDescription">Compartilhe vídeos que você tenha direito de distribuir.</p>
+    </article>
+    <article class="step">
+      <span class="step-number">02</span>
+      <h3 data-i18n="stepAudience">Desenvolva sua audiência</h3>
+      <p data-i18n="stepAudienceDescription">Divulgue seu conteúdo e alcance novos espectadores.</p>
+    </article>
+    <article class="step">
+      <span class="step-number">03</span>
+      <h3 data-i18n="stepEarn">Monetize</h3>
+      <p data-i18n="stepEarnDescription">Verifique sua elegibilidade e as regras de remuneração.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="indicacoes">
+  <div class="section-heading">
+    <h2 data-i18n="referralTitle">Programa de indicações</h2>
+  </div>
+
+  <div class="referral-box">
+    <h3 data-i18n="referralHeading">Compartilhe a Febspot</h3>
+    <p data-i18n="referralDescription">
+      Convide novos criadores para conhecer a plataforma. Consulte as regras
+      oficiais para verificar a existência de recompensas e os critérios de elegibilidade.
+    </p>
+
+    <div class="referral-actions">
+      <a class="button button-primary"
+         href="https://www.febspot.com/"
+         target="_blank" rel="noopener"
+         data-i18n="openReferral">Acessar indicações oficiais</a>
+
+      <button class="button button-outline"
+              id="copyReferral"
+              type="button"
+              data-i18n="copyLink">Copiar link do site</button>
+    </div>
+    <p id="copyStatus" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="section" id="busca">
+  <div class="section-heading">
+    <h2 data-i18n="searchTitle">Pesquisar vídeos</h2>
+  </div>
+
+  <form id="searchForm" style="display:flex;gap:8px">
+    <input
+      id="searchInput"
+      type="search"
+      data-i18n-placeholder="searchPlaceholder"
+      placeholder="Buscar por título ou categoria..."
+      aria-label="Pesquisar vídeos"
+      style="flex:1;min-width:0;padding:12px;border:1px solid var(--border);border-radius:7px;outline-offset:2px">
+    <button class="button button-primary" type="submit" data-i18n="searchButton">
+      Buscar
+    </button>
+  </form>
+
+  <p class="empty" id="emptyMessage" data-i18n="noResults">
+    Nenhum resultado encontrado.
+  </p>
+</section>
+
+</main>
+</div>
+
+<footer>
+  <a class="logo" href="#inicio">feb<span>spot</span></a>
+  <div class="footer-links">
+    <a href="https://www.febspot.com/" data-i18n="official">Site oficial</a>
+    <a href="https://www.febspot.com/about/" data-i18n="about">Sobre</a>
+    <a href="https://www.febspot.com/terms/service/" data-i18n="terms">Termos</a>
+    <a href="https://www.febspot.com/contact/" data-i18n="contact">Contato</a>
+  </div>
+  <p data-i18n="footerNote">
+    Interface demonstrativa independente (Prototipo). Não é uma página oficial da Febspot.
+  </p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+<!--fazer a estrutura antes de realizar as ações da pagina -->
