@@ -1,5 +1,5 @@
 # Febspot Inspired UI
-
+![Project Preview](assets/screenshot-home.jpeg)
 Frontend prototype inspired by the Febspot platform.
 
 ---
